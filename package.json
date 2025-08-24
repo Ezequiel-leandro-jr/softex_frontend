@@ -1,0 +1,23 @@
+{
+  "name": "softex_frontend",
+  "version": "1.0.0",
+  "description": "Repositório destinado ao curso de front-end ministrado pela Softex Pernambuco através do programa Futuro Bolsa Digital (2025).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezequiel-leandro-jr/softex_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezequiel-leandro-jr/softex_frontend/issues"
+  },
+  "homepage": "https://github.com/Ezequiel-leandro-jr/softex_frontend#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
