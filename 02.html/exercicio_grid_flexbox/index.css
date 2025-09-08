@@ -1,0 +1,30 @@
+#principal {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+#cabeçalho {
+    background-color:rgb(228, 184, 184);
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+#background-cabeçalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+    list-style-type:none;
+    border-style: solid;
+}

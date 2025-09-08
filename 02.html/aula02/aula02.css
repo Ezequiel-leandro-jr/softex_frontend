@@ -26,3 +26,10 @@
 #topo {
     background-color: bisque;
 }
+
+.container-centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
