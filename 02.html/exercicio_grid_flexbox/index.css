@@ -62,4 +62,7 @@
     grid-row: 3;
     grid-column: 1 / span 2;
     background-color: brown;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
