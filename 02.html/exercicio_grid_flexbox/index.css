@@ -1,13 +1,19 @@
-#principal {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#topo {
     display: grid;
     align-content: center;
     justify-content: center;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 50px 1fr 50px;
-}
+}    
 
 #cabeçalho {
-    background-color:rgb(228, 184, 184);
+    background-color:darkgreen;
     grid-row: 1;
     grid-column: 1 / span 2;
     text-align: center;
@@ -21,10 +27,22 @@
     justify-content: space-between;
 }
 
-ul {
-    display:flex;
-    justify-content:space-between;
+#menu-cabeçalho {
+    flex-grow: 1;
     align-content:center;
-    list-style-type:none;
-    border-style: solid;
 }
+
+#menu-cabeçalho ul {
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+}
+
+#menu-cabeçalho li {
+    font-size: 30px;
+    color:antiquewhite;
+    
+}
+
+/*  SIDEBAR */
+
