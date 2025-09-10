@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
-#topo {
+#principal {
+    background-image: url(https://img.freepik.com/premium-vector/pattern-basil-rosemary-leaves_762075-174.jpg?w=2000);
     display: grid;
     align-content: center;
     justify-content: center;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 50px 1fr 50px;
-}    
+    
+
+}
 
 #cabeçalho {
     background-color:darkgreen;
@@ -40,7 +43,7 @@
 
 #menu-cabeçalho li {
     font-size: 30px;
-    color:antiquewhite;
+    color:aliceblue
     
 }
 
