@@ -71,8 +71,6 @@
 /* ÁREA DE PRODUTOS */
 
 #area-produtos {
-    background-color:azure;
-    opacity: 0.8;
     margin-top: 20px;
     margin-bottom: 40px;
 
@@ -87,9 +85,62 @@
 }
 
 .card-produto {
-    background-color:green;
+    
+    display:grid;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-columns: 10% 80% 10%;
+    background-color:rgb(2, 29, 2);
     border-radius: 10px;
+    justify-content: center;
 }
+
+.imagem-produto {
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+
+.foto-produto {
+    width: 150px;
+    height: 100px;
+}
+
+.titulo-produto {
+    margin-top: 20px;
+    margin-left: 20%;
+    color:rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.preco-produto {
+    margin-top: 20px;
+    margin-left: 18%;
+    color:rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.area-botao-produto {
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.botao-comprar-produto {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(91, 172, 10);
+    margin-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 
 /* RODAPÉ */
 #rodape {
