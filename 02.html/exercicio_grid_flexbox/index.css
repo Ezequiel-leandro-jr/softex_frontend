@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+li {
+    cursor: pointer;
+}
+
 #principal {
     display: grid;
     align-content: center;
@@ -38,7 +42,7 @@
 }
 
 #menu-cabecalho li {
-    font-size: 30px;
+    font-size: 20px;
     color:aliceblue;
     
 }
@@ -48,8 +52,7 @@
     grid-row: 2;
     grid-column: 1;
     background-color: rgb(190, 235, 190);
-    font-size: 30px;
-    padding-bottom: 50px;
+    font-size: 20px;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 40px;
@@ -58,10 +61,11 @@
 }
 
 #lista-categorias li {
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 30px;
     padding-left: 20px;
-    color:rgb(0, 31, 0)
+    color:rgb(0, 31, 0);
+    list-style-type: none;
 }
 
 
@@ -79,65 +83,68 @@
 #fila-produtos {
    display: flex;
    justify-content: space-between;
-   margin-top: 20px;
-   margin-left: 50px;
-   margin-right: 50px;
+   margin: 20px auto;
+   padding: 0 20px;
 }
 
 .card-produto {
-    
     display:grid;
     grid-template-rows: 40% 40% 20%;
     grid-template-columns: 10% 80% 10%;
     background-color:rgb(2, 29, 2);
     border-radius: 10px;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
 }
 
 .imagem-produto {
     grid-row: 1;
     grid-column: 2;
-    justify-content: center;
-    width: 200px;
-    height: 300px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-bottom: 10px;
 
 }
 
 .foto-produto {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .titulo-produto {
-    margin-top: 20px;
-    margin-left: 20%;
     color:rgb(255, 255, 255);
-    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .preco-produto {
-    margin-top: 20px;
-    margin-left: 18%;
     color:rgb(255, 255, 255);
     justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 30px;
 }
 
 .area-botao-produto {
     display:flex;
-    justify-content: center;
+    align-items:center;
+    justify-content: space-around;
+    text-align: center;
     margin-top: 30px;
-    margin-right: 50px;
+    margin-bottom: 30px;
+
 }
 
 .botao-comprar-produto {
     width: 150px;
     height: 30px;
     background-color: rgb(91, 172, 10);
-    margin-right: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.botao-favoritar-produto {
+    cursor: pointer;
 }
 
 
