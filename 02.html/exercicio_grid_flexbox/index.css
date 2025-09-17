@@ -10,7 +10,7 @@ html, body {
 }
 
 
-li {
+header li {
     cursor: pointer;
 }
 
@@ -18,7 +18,7 @@ li {
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: 70px 1fr 300px;
     min-height: 100vh;
 }
@@ -76,6 +76,7 @@ li {
     padding-left: 20px;
     color:rgb(0, 31, 0);
     list-style-type: none;
+    cursor:pointer;
 }
 
 
@@ -94,7 +95,7 @@ li {
    display: flex;
    justify-content: space-between;
    margin: 40px auto;
-   padding: 0 20px;
+   padding: 0 40px;
 }
 
 .card-produto {
@@ -166,7 +167,45 @@ li {
     grid-row: 3;
     grid-column: 1 / span 2;
     background-color:rgb(0, 31, 0);
+    justify-content: space-between;
 }
 
+#area-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
 
+.colunas h3 {
+    margin-bottom: 30px;
+    color:aliceblue;
+}
+
+#coluna2 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:greenyellow;
+    cursor:pointer;
+}
+
+#coluna3 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:aliceblue;
+}
+
+.colunas p {
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.colunas span {
+    font-weight: bold;
+    color:coral;
+}
+
+#copyright {
+    color:deepskyblue;
+    margin-top: 130px;
+}
 

@@ -1,0 +1,265 @@
+/* Definições globais */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos. */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos. */
+    box-sizing: border-box; /* Garante que o preenchimento e a borda sejam incluídos na largura e altura total do elemento, facilitando o layout. */
+    font-family: 'Segoe UI'; /* Define a fonte padrão para todos os elementos. */
+}
+
+body {
+    background-color: rgb(239, 232, 232); /* Define uma cor de fundo clara para a página. */
+    color: #333; /* Define a cor principal do texto como um cinza escuro. */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas do texto para melhorar a legibilidade. */
+}
+
+/* Estilo do cabeçalho */
+
+/* Layout do conteúdo do cabeçalho */
+.header-content {
+    display: flex; /* Habilita o Flexbox para organizar os itens filhos. */
+    justify-content: space-between; /* Distribui os itens uniformemente, com o primeiro item no início e o último no fim. */
+    align-items: center; /* Alinha os itens verticalmente no centro. */
+}
+
+.header {
+    background: #2c3e50; /* Cor de fundo azul escuro para o cabeçalho. */
+    color: white; /* Cor do texto dentro do cabeçalho. */
+    padding: 15px 0; /* Adiciona preenchimento superior e inferior de 15px, e 0 nas laterais. */
+    position: sticky; /* Torna o cabeçalho "pegajoso", ou seja, ele fica fixo no topo ao rolar a página. */
+    top: 0; /* Define a distância do topo da tela. */
+    z-index: 100; /* Define a ordem de empilhamento, garantindo que o cabeçalho fique sobre outros elementos. */
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: auto; /* Define a largura máxima do container. */
+    margin: 200 auto; /* Centralizar horizontalmente. margem superior e inferior é 200px */
+    padding: 0 15px; /* Adiciona preenchimento nas laterais para evitar que o conteúdo encoste nas bordas da tela em dispositivos menores. */
+}
+
+
+
+/* Estilo do logo */
+.logo {
+    font-size: 24px; /* Define o tamanho da fonte. */
+    font-weight: bold; /* Deixa a fonte em negrito. */
+    display: flex; /* Habilita o Flexbox. */
+    align-items: center; /* Alinha o ícone e o texto verticalmente. */
+}
+
+.logo-icon {
+    margin-right: 10px; /* Adiciona um espaço à direita do ícone do logo. */
+    font-size: 28px; /* Aumenta o tamanho da fonte do ícone. */
+}
+
+/* Estilo da navegação */
+.nav {
+    display: flex; /* Habilita o Flexbox. */
+    gap: 20px; /* Define o espaçamento entre os links de navegação. */
+}
+
+.nav a {
+    color: #ecf0f1; /* Cor dos links. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    font-weight: 500; /* Define a espessura da fonte. */
+    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto dos links. */
+    border-radius: 4px; /* Arredonda as bordas dos links. */
+}
+
+/* Estilo do botão do carrinho */
+.cart {
+    display: flex; /* Habilita o Flexbox. */
+    align-items: center; /* Alinha verticalmente os itens. */
+    background: #d53838; /* Cor de fundo vermelha. */
+    padding: 8px 15px; /* Adiciona preenchimento interno. */
+    border-radius: 5px; /* Arredonda as bordas. */
+    cursor: pointer; /* Muda o cursor para um ponteiro quando o mouse passa sobre o elemento. */
+}
+
+/* Layout do conteúdo principal */
+.main-grid {
+    display: grid; /* Habilita o Grid Layout. */
+    grid-template-columns: 250px 1fr; /* Define duas colunas: a primeira com largura fixa de 250px (para a barra lateral) e a segunda com a largura restante. */
+    gap: 20px; /* Define o espaçamento entre as colunas e linhas. */
+    margin: 20px 0; /* Adiciona margem superior e inferior. */
+}
+
+/* Estilo da barra lateral (sidebar) */
+.sidebar {
+    background: white; /* Cor de fundo branca. */
+    border-radius: 8px; /* Arredonda as bordas. */
+    padding: 20px; /* Adiciona preenchimento interno. */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Adiciona uma sombra suave. */
+    height: fit-content; /* Ajusta a altura da barra lateral ao seu conteúdo. */
+}
+
+.sidebar h3 {
+    margin-bottom: 15px; /* Adiciona margem abaixo do título. */
+    padding-bottom: 10px; /* Adiciona preenchimento abaixo do título. */
+    border-bottom: 2px solid #3498db; /* Adiciona uma linha de borda azul abaixo do título. */
+    color: #2c3e50; /* Cor do texto do título. */
+}
+
+/* Estilo da lista de categorias */
+.categories {
+    display: flex; /* Habilita o Flexbox. */
+    flex-direction: column; /* Organiza os itens em uma coluna. */
+    gap: 10px; /* Define o espaçamento entre os itens da lista. */
+}
+
+.categories li {
+    list-style: none; /* Remove os marcadores de lista. */
+    padding: 8px 12px; /* Adiciona preenchimento interno. */
+    border-radius: 4px; /* Arredonda as bordas. */
+    cursor: pointer; /* Muda o cursor para um ponteiro. */
+}
+
+/* Estilo do cabeçalho da seção de produtos */
+.products-header {
+    display: flex; /* Habilita o Flexbox. */
+    justify-content: space-between; /* Distribui os itens horizontalmente. */
+    align-items: center; /* Alinha verticalmente. */
+    margin-bottom: 20px; /* Adiciona margem abaixo. */
+}
+
+.products-title {
+    font-size: 24px; /* Tamanho da fonte do título. */
+    color: #2c3e50; /* Cor do texto. */
+}
+
+/* Layout da grade de produtos */
+.products-grid {
+    display: grid; /* Habilita o Grid Layout. */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Cria colunas que se adaptam ao espaço disponível. "minmax(220px, 1fr)" garante que cada coluna tenha no mínimo 220px e o máximo da largura restante. */
+    gap: 20px; /* Espaçamento entre os cards de produto. */
+}
+
+/* Estilo do card de produto */
+.product-card {
+    background: white; /* Cor de fundo branca. */
+    border-radius: 8%; /* Arredonda as bordas. */
+    overflow: hidden; /* Oculta qualquer conteúdo que saia do card. */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Adiciona uma sombra suave. */
+    display: flex; /* Habilita o Flexbox. */
+    flex-direction: column; /* Organiza o conteúdo do card em uma coluna. */
+}
+
+/* Estilo da imagem do produto */
+.product-image {
+    height: 180px; /* Altura fixa da área da imagem. */
+    background: #f5f7fa; /* Cor de fundo. */
+    display: flex; /* Habilita o Flexbox. */
+    align-items: center; /* Centraliza a imagem verticalmente. */
+    justify-content: center; /* Centraliza a imagem horizontalmente. */
+    padding: 15px; /* Adiciona preenchimento interno. */
+}
+
+.product-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner. */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner. */
+    object-fit: contain; /* Redimensiona a imagem para caber no contêiner mantendo a proporção. */
+}
+
+/* Estilo da seção de informações do produto */
+.product-info {
+    padding: 15px; /* Adiciona preenchimento interno. */
+    display: flex; /* Habilita o Flexbox. */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna. */
+    flex-grow: 1; /* Permite que esta seção cresça e ocupe o espaço restante do card. */
+}
+
+.product-title {
+    font-weight: 600; /* Define a espessura da fonte. */
+    margin-bottom: 8px; /* Adiciona margem abaixo do título. */
+    color: #2c3e50; /* Cor do texto do título. */
+}
+
+.product-description {
+    color: #7f8c8d; /* Cor do texto da descrição. */
+    font-size: 14px; /* Tamanho da fonte da descrição. */
+    margin-bottom: 15px; /* Adiciona margem abaixo da descrição. */
+    flex-grow: 1; /* Permite que a descrição ocupe o espaço restante para que o preço e o botão fiquem no final do card. */
+}
+
+.product-price {
+    font-weight: bold; /* Define a fonte em negrito. */
+    font-size: 18px; /* Tamanho da fonte. */
+    color: #2c3e50; /* Cor do texto. */
+    margin-bottom: 15px; /* Adiciona margem abaixo. */
+}
+
+/* Layout das ações do produto (botões) */
+.product-action {
+    display: flex; /* Habilita o Flexbox. */
+    justify-content: space-between; /* Distribui os botões. */
+}
+
+.buy-btn {
+    background: #3498db; /* Cor de fundo azul. */
+    color: white; /* Cor do texto. */
+    border: none; /* Remove a borda. */
+    padding: 8px 15px; /* Adiciona preenchimento. */
+    border-radius: 4px; /* Arredonda as bordas. */
+    cursor: pointer; /* Muda o cursor para um ponteiro. */
+    flex-grow: 1; /* Permite que o botão de compra cresça e ocupe o espaço restante. */
+    margin-right: 10px; /* Adiciona margem à direita do botão. */
+}
+
+.wishlist-btn {
+    background: #ecf0f1; /* Cor de fundo cinza claro. */
+    border: none; /* Remove a borda. */
+    width: 36px; /* Largura fixa. */
+    height: 36px; /* Altura fixa. */
+    border-radius: 50%; /* Torna o botão um círculo. */
+    display: flex; /* Habilita o Flexbox. */
+    align-items: center; /* Centraliza o ícone verticalmente. */
+    justify-content: center; /* Centraliza o ícone horizontalmente. */
+    cursor: pointer; /* Muda o cursor para um ponteiro. */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background: #2c3e50; /* Cor de fundo do rodapé. */
+    color: white; /* Cor do texto. */
+    padding: 30px 0; /* Adiciona preenchimento superior e inferior. */
+    margin-top: 40px; /* Adiciona margem superior. */
+}
+
+/* Layout do conteúdo do rodapé */
+.footer-content {
+    display: flex; /* Habilita o Flexbox. */
+    justify-content: space-between; /* Distribui as seções do rodapé. */
+}
+
+.footer-section {
+    flex: 1; /* Permite que cada seção ocupe uma parte igual do espaço disponível. */
+    padding: 0 15px; /* Adiciona preenchimento lateral. */
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; /* Adiciona margem abaixo do título da seção. */
+    font-size: 18px; /* Tamanho da fonte do título. */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove os marcadores de lista. */
+}
+
+.footer-section li {
+    margin-bottom: 8px; /* Adiciona margem abaixo de cada item da lista. */
+}
+
+.footer-section a {
+    color: #00f832; /* Cor dos links do rodapé (um verde neon). */
+    text-decoration: none; /* Remove o sublinhado. */
+}
+
+/* Estilo da seção de direitos autorais */
+.copyright {
+    text-align: center; /* Centraliza o texto. */
+    padding-top: 20px; /* Adiciona preenchimento superior. */
+    margin-top: 20px; /* Adiciona margem superior. */
+    border-top: 1px solid #3c546e; /* Adiciona uma linha de borda no topo. */
+    color: #95a5a6; /* Cor do texto. */
+}
+
