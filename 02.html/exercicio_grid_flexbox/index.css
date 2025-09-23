@@ -153,6 +153,7 @@ header li {
     background-color: rgb(91, 172, 10);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
+    color:rgb(255, 255, 255);
 }
 
 .botao-favoritar-produto {
