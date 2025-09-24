@@ -69,9 +69,23 @@ html, body {
 }
 
 /* 1° LINHA MAIN */
-#principais-noticias-semana {
+#principais-noticias-semana-area {
     display: grid;
     grid-template-rows: 70% 30%;
     grid-template-columns: 70% 30%;
     grid-row: 1;
+
+}
+
+#principal-noticia {
+    grid-row: 1 /span 2;
+}
+
+
+/* RODAPE */
+#rodape-area {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 33,3% 33,3% 33,3%;
+    grid-row: 7;
 }
