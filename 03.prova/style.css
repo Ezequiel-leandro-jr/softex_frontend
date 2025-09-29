@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+header li {
+    cursor: pointer;
+}
+
+#principal {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 70px 1fr 300px;
+    min-height: 100vh;
+    background-color: rgb(88, 18, 18);
+}
+
+/* HEADER */
+
+#cabecalho {
+    background-color:rgb(201, 96, 96);
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+
+
+}
+
+#background-cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-header {
+    margin: 5px 5px;
+}
+
+#titulo-header {
+    text-align: center;
+    margin: 20px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:overline underline;
+}
+
+#menu-cabecalho {
+    flex-grow: 1;
+    align-content:center;
+}
+
+#menu-cabecalho ul {
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    padding-top: 5px;
+}
+
+#menu-cabecalho li {
+    font-size: 20px;
+    color:aliceblue;
+    
+}
+
+#sobrenos-header {
+    cursor: pointer;
+    text-shadow:5px 5px 5px rgb(0, 0, 0);
+    color:rgb(255, 238, 1);
+}
+
+/*  SIDEBAR */
+#sidebar {
+    grid-row: 2;
+    grid-column: 1;
+    background-color:lightcoral;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+#titulo-categorias {
+    text-decoration: underline;
+}
+
+#lista-categorias li {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 20px;
+    color:rgb(0, 0, 0);
+    list-style-type: none;
+    cursor:pointer;
+}
+
+
+
+
+
+/* ÁREA DE PRODUTOS */
+
+#area-produtos {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+#area-produtos h1 {
+    color:aliceblue;
+}
+
+#fila-produtos {
+   display: flex;
+   justify-content: space-between;
+   margin: 40px auto;
+   padding: 0 40px;
+}
+
+.card-produto {
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 80% 10%;
+    background-color:rgb(218, 240, 218);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height:400px;
+    padding-bottom: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.imagem-produto {
+    grid-row: 2;
+    grid-column: 2;
+
+}
+
+.foto-produto {
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-produto {
+    color:rgb(10, 75, 8);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.preco-produto {
+    color:rgb(10, 75, 8);
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.area-botao-produto {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao-comprar-produto {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(91, 172, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+
+.botao-favoritar-produto {
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+
+/* RODAPÉ */
+#rodape {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    background-color:rgb(0, 0, 0);
+    justify-content: space-between;
+}
+
+#area-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+.colunas h3 {
+    margin-bottom: 30px;
+    color:aliceblue;
+}
+
+#coluna2 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:greenyellow;
+    cursor:pointer;
+}
+
+#coluna3 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:aliceblue;
+}
+
+.colunas p {
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.colunas span {
+    font-weight: bold;
+    color:coral;
+}
+
+#copyright {
+    color:deepskyblue;
+    margin-top: 130px;
+}
+
