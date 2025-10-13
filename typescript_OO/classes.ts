@@ -16,4 +16,13 @@ class Pessoa {
 
 const aluno = new Pessoa("Carlos", "aluno de programação", 28);
 
-const professor = new Pessoa("Ana", "professora de inglês", 40);
+const professora = new Pessoa("Ana", "professora de inglês", 40);
+
+
+//exibindo a saída
+console.log('--- Saída dos Objetos ---');
+console.log("Aluno:", aluno.apresentar());
+console.log("Professora:", professora.apresentar());
+console.log('--------------------------');
+console.log(`Verificando o nome do aluno: ${aluno.nome}`);
+console.log(`Verificando o cargo da professora: ${professora.funcao}`);
