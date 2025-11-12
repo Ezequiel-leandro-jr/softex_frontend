@@ -1,4 +1,4 @@
-class Pessoa {
+class People {
     nome: string;
     funcao: string;
     idade: number;
@@ -14,9 +14,9 @@ class Pessoa {
     }
 }
 
-const aluno = new Pessoa("Carlos", "aluno de programação", 28);
+const aluno = new People("Carlos", "aluno de programação", 28);
 
-const professora = new Pessoa("Ana", "professora de inglês", 40);
+const professora = new People("Ana", "professora de inglês", 40);
 
 
 //exibindo a saída
