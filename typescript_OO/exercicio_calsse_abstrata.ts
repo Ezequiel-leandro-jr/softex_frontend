@@ -53,6 +53,7 @@ class Funcionario extends Cliente {
         this.cargo = cargo;
         this.salario = salario;
    }
+}
 
 class Carro extends Veiculo {
     portas: number;
@@ -70,4 +71,13 @@ class Carro extends Veiculo {
         console.log('O carro começou a andar!');
     }
 }
+
+const funcionario1 = new Funcionario('123', 'Ezequiel','Leandro', 30, '02382716356', 'desenvolvedor fullstack', 10000);
+const funcionario2 = new Funcionario('456', 'Vanessa', 'Silva', 20, '0274899027467', 'desenvolvedora front-end', 10000);
+const carro1 = new Carro('Ferrari', 'F50', 1998, 2, 'gasolina', 'esportivo');
+
+funcionario1.apresentacao();
+funcionario2.toString();
+carro1.ligar();
+carro1.mover();
 
